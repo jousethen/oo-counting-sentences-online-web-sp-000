@@ -20,10 +20,10 @@ class String
   def count_sentences
     sentence_count = 0 
     
-    sentence_count = self.split(" ").count do |x|
+    self.split(" ").count do |x|
      
       if x.sentence? || x.question? || x.exclamation?
-        return true
+        sentence_count += 1 
       end
     end
     return sentence_count
