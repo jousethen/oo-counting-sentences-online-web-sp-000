@@ -26,6 +26,6 @@ class String
         return true
       end
     end
-   
+    return sentence_count
   end
 end
