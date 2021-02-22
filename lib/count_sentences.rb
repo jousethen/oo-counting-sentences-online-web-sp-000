@@ -21,7 +21,7 @@ class String
     sentence_count = 0 
     
     sentence_count = self.split(" ").count do |x|
-      binding.pry 
+     
       if x.sentence? || x.question? || x.exclamation?
         return true
       end
